@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto con BCML</title>
+    <link rel="stylesheet" href="./css/miestilo.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="./js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <script src="js/vContac.js"></script>
+</head>
+<body class="Registrarse">
+    <header class="header">
+        <nav class="navegacion">
+            <a class="anclaLogo" href="index.html">
+                <!-- <i class="fas fa-film" aria-hidden="true"></i> -->
+                <img src="./img/favicon.ico" alt="">
+                <span>A volar con BCML</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="avolar.html">Vuelos</a></li>
+                <li class="listaItem"><a class="linkNav" href="registro.html">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav" href="inicio.html">Iniciar Sesión</a></li>
+                <li class="listaItem"><a class="linkNav" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main  class="ppal">
+      <section class="seccion">
+        <form  action="" method="post">
+            <h2 class="titulo">Contacto</h2>
+            <div>
+                  <select id="select-beast" placeholder="De donde eres" autocomplete="on">
+                  <option value="1">Capital Federal</option>
+                  <option value="2">Buenos Aires</option>
+                  <option value="3">Catamarca</option>
+                  <option value="4">Córdoba</option>
+                  <option value="5">Corrientes</option>
+                  <option value="6">Chaco</option>
+                  <option value="7">Chubut</option>
+                  <option value="8">Entre Ríos</option>
+                  <option value="9">Formosa</option>
+                  <option value="10">Jujuy</option>
+                  <option value="11">La Pampa</option>
+                  <option value="12">La Rioja</option>
+                  <option value="13">Mendoza</option>
+                  <option value="14">Misiones</option>
+                  <option value="15">Neuquén</option>
+                  <option value="16">Río Negro</option>
+                  <option value="17">Salta</option>
+                  <option value="18">San Juan</option>
+                  <option value="19">San Luis</option>
+                  <option value="20">Santa Cruz</option>
+                  <option value="21">Santa Fe</option>
+                  <option value="22">Santiago del Estero</option>
+                  <option value="23">Tierra del Fuego</option>
+                  <option value="24">Tucumán</option>
+                </select>
+            </div>      
+            <div>
+                <input type="text" placeholder="Nombre" required id="nombre" name="nombre">
+            </div>
+            <div>
+                <input type="text" placeholder="Apellido" required id="apellido" name="apellido">
+            </div>
+            <div>
+                  <label for="label">
+                        <input type="checkbox" id="boletin" name="boletin" class="check">
+                        Desea Oferta de Voletos
+                  </label>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" required id="email" name="email">
+            </div>
+            <div>
+                <textarea id="msg" placeholder="En que podemos ayudarte" name="msg" rows="2" cols="33"></textarea>
+            </div>
+            <label for="">Donde ubicarnos</label>
+            <div class="centrar">
+                <iframe width="300" height="90" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos+aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+            <div>
+                <input  class="boton" type="submit" value="Enviar" onclick="valida_envia()">
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <nav class="navegacion">
+            <br>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="avolar.html">Vuelos</a></li>
+                <li class="listaItem"><a class="linkNav" href="registrarse.html">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav" href="/inicio.html">Iniciar Sesión</a></li>
+                <li class="listaItem"><a class="linkNav" href="contacto.html">Contacto</a></li>
+            </ul>
+            <br>
+            <p>Proyecto Front. | Comisión:24260 | Integrantes: Barbs, Lourdes Sanchez, Mirla Longhitano, Cesar Aponte</p>
+        </nav>
+    </footer>
+</body>
+</html>

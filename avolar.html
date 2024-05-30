@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A volar con BCML</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/vuelos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+    <nav class="navegacion">
+        <a class="anclaLogo" href="#">
+            <!-- <i class="fas fa-film" aria-hidden="true"></i> -->
+            <img src="./img/favicon.ico" alt="">
+            <span>A volar con BCML</span>
+        </a>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="#">Vuelos</a></li>
+                <li class="listaItem"><a class="linkNav" href="registro.html">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav" href="inicio.html">Iniciar Sesión</a></li>
+                <li class="listaItem"><a class="linkNav" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section__container booking__container">
+        <div class="booking__nav clase">
+            <p>Selecione la clase: </p>
+            <select name="select">
+                <option value="1">Económica</option>
+                <option value="2" selected>Ejecutiva</option>
+                <option value="3">PRIMERA CLASE</option>
+              </select>
+        </div>
+        <form>
+          <div class="form__group">
+            <span><i class="ri-map-pin-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="text" />
+                <label>Ubicación</label>
+              </div>
+              <p>Donde estas?</p>
+            </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-user-3-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="text" />
+                <label>Viaje</label>
+              </div>
+              <p>Adonde vas</p>
+            </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="date" />
+              </div>
+              <p>Fecha de salida</p>
+            </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="date" />
+              </div>
+              <p>Fecha de regreso</p>
+            </div>
+          </div>
+          <button class="btn"><i class="ri-search-line">A volar</i></button>
+        </form>
+      </section>
+      <section class="section__container travellers__container">
+        <h2 class="section__header">La mejor y mas económica forma de viajar</h2>
+        <h2 class="section__header">Oferta de la semana</h2>
+        <div class="travellers__grid">
+          <div class="travellers__card">
+            <img src="imgvuelos/traveller-1.jpg" alt="traveller" />
+            <div class="travellers__card__content">
+              <p>Dubai</p>
+            </div>
+          </div>
+          <div class="travellers__card">
+            <img src="imgvuelos/traveller-2.jpg" alt="traveller" />
+            <div class="travellers__card__content">
+              <p>Paris</p>
+            </div>
+          </div>
+          <div class="travellers__card">
+            <img src="imgvuelos/traveller-3.jpg" alt="traveller" />
+            <div class="travellers__card__content">
+              <p>Singapur</p>
+            </div>
+          </div>
+          <div class="travellers__card">
+            <img src="imgvuelos/traveller-4.jpg" alt="traveller" />
+            <div class="travellers__card__content">
+              <p>Malasia</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <footer class="footer">
+        <nav class="navegacion">
+            <br>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="#ofertas">Vuelos</a></li>
+                <li class="listaItem"><a class="linkNav" href="./pages/registrarse.html">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav iniciarSesion" href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
+                <li class="listaItem"><a class="linkNav" href="./pages/iniciosesion.html">Contacto</a></li>
+            </ul>
+            <br>
+            <p>Proyecto Front. | Comisión:24260 | Integrantes: Barbs, Lourdes Sanchez, Mirla Longhitano, Cesar Aponte</p>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <title>A volar con BCML</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/vuelos.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div id="header"></div>
+  <section class="section__container booking__container">
+    <div class="booking__nav">
+      <span>Clase Económica</span>
+      <span>Clase Ejecutiva</span>
+      <span>Primera Clase</span>
+    </div>
+    <form>
+      <div class="form__group">
+        <span><i class="ri-map-pin-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="text" />
+            <label>Ubicación</label>
+          </div>
+          <p>Donde vas?</p>
+        </div>
+      </div>
+      <div class="form__group">
+        <span><i class="ri-user-3-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="number" />
+            <label>Viaje</label>
+          </div>
+          <p>Agregar Invitados</p>
+        </div>
+      </div>
+      <div class="form__group">
+        <span><i class="ri-calendar-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="text" />
+            <label>Partida</label>
+          </div>
+          <p>Agregar fecha</p>
+        </div>
+      </div>
+      <div class="form__group">
+        <span><i class="ri-calendar-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="text" />
+            <label>Regreso</label>
+          </div>
+          <p>Agregar fecha</p>
+        </div>
+      </div>
+      <button class="btn"><i class="ri-search-line"></i></button>
+    </form>
+  </section>
+  <section class="section__container travellers__container">
+    <h2 class="section__header">Best travellers of the month</h2>
+    <div class="travellers__grid">
+      <div class="travellers__card">
+        <img src="imgvuelos/traveller-1.jpg" alt="traveller" />
+        <div class="travellers__card__content">
+          <img src="imgvuelos/client-1.jpg" alt="client" />
+          <h4>Barbara</h4>
+          <p>Dubai</p>
+        </div>
+      </div>
+      <div class="travellers__card">
+        <img src="imgvuelos/traveller-2.jpg" alt="traveller" />
+        <div class="travellers__card__content">
+          <img src="imgvuelos/client-2.jpg" alt="client" />
+          <h4>Cesar</h4>
+          <p>Paris</p>
+        </div>
+      </div>
+      <div class="travellers__card">
+        <img src="imgvuelos/traveller-3.jpg" alt="traveller" />
+        <div class="travellers__card__content">
+          <img src="imgvuelos/client-3.jpg" alt="client" />
+          <h4>Lulu</h4>
+          <p>Singapur</p>
+        </div>
+      </div>
+      <div class="travellers__card">
+        <img src="imgvuelos/traveller-4.jpg" alt="traveller" />
+        <div class="travellers__card__content">
+          <img src="imgvuelos/mirta.jpg" alt="client" />
+          <h4>Mirta</h4>
+          <p>Malasia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <div id="footer"></div>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    });
+  </script> 
+</body>
+
+</html>
